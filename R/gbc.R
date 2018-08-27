@@ -162,7 +162,6 @@ cluster_number <<- matrix(nrow = 1,ncol = 1, -1) #matrix containing the nodes an
 #'
 #' @importFrom graphics plot
 #' @importFrom graphics segments
-#' @importFrom stats calinhara
 #' @export
 
 gbc <- function(x){

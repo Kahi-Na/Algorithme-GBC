@@ -1,10 +1,10 @@
 ---
-title: "Vignette GBC"
+title: "GBC Vignette"
 author: "Kahina"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette GBC}
+  %\VignetteIndexEntry{GBC Vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -16,55 +16,27 @@ knitr::opts_chunk$set(
 )
 ```
 
-Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
+## gbc Vignette
+  The gbc package includes an implementation of Graph Based Clustering  Method  (GBC[1][2]) for the R platform. A new method  of  clustering created  by  the respective  both  IT professors Fabrice MUHLENBACH [3] and Stéphane LALLICH [4]. This vignette introduces how to interface with GBC features.
+  
+To understand how GBC works, we refer to the Rmarkdown documentation a good  resource for documentation used to goes over the basic concepts of the GBC algorithm. For the sake of simplicity, consider the same sample dataset : (RUSPINI).
 
-- Never uses retina figures
-- Has a smaller default figure size
-- Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
-
-## gbc Vignette Info
-
-Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
 
 ```{r}
 library(gbc)
 plot(ruspini)
 ```
 
-## Styles
+## Examples 
 
-The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
+## Results and figures
 
-    output: 
-      rmarkdown::html_vignette:
-        css: mystyles.css
+## References
+1. article_FM_SL_ICDM_2009 - Fabrice MUHLENBACH [1] & Stéphane LALLICH [2], « A New Clustering Algorithm Based on Regions of Influence with Self-Detection of the Best Number of Clusters », International Conference of Data Mining (ICDM), année 2009, pages 1-6.
 
-## Figures
+2. EGC2009_FM_6_pages - Fabrice MUHLENBACH [1], « Méthode de regroupement par graphe de voisinage », Extraction et gestion des connaissances (EGC'2009), Jan 2009, Strasbourg, France (https://hal.archives-ouvertes.fr/hal-00364651v2), année 2009, pages 1-6.
 
-The figure sizes have been customised so that you can easily put two images side-by-side. 
+3. Fabrice MUHLENBACH, Maître de Conférences en Informatique et Enseignant Chercheur au laboratoire Hubert Curien, UMR CNRS 5516, à L’Université Jean Monnet de Saint-Étienne, France, (https://perso.univ-st-etienne.fr/muhlfabr).
 
-```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
-```
+4. Stéphane LALLICH, Professeur émérite à l'Université Lyon 2, Enseignant Chercheur au laboratoire laboratoire ERIC (EA 3083), à L’Université Lumière Lyon 2, France, (http://eric.univ-lyon2.fr/~lallich).
 
-You can enable figure captions by `fig_caption: yes` in YAML:
-
-    output:
-      rmarkdown::html_vignette:
-        fig_caption: yes
-
-Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
-
-## More Examples
-
-You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
-
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(mtcars, 10))
-```
-
-Also a quote using `>`:
-
-> "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))

@@ -10,7 +10,6 @@ LazyData: true
 RoxygenNote: 6.1.0
 Imports: graphics,
     utils,
-    stats
 Suggests: 
     knitr,
     rmarkdown
