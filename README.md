@@ -9,7 +9,7 @@
 
 ### Instructions how to Manage the project
 
-1.	Install  the R IDE “RStudio”  for windows 7/8/10 : <br/> Download RStudio (version 1.1.453+) and install it, . Launch the RStudio and install and load the necessary packages “devtools”, “usethis” and “roxygen2” to build the project.
+1.	Install  the R IDE “RStudio”  for windows 7/8/10 : <br/> Download RStudio (version 1.1.453+) and install it, . Launch the RStudio and install and load the necessary packages (“devtools”, “usethis” and “roxygen2”) to build the project.
 2.	Install R ( RStudio requires R version 3.0.1+) : <br/> Download R and install it.
 3.	Install Rtools (Creating or using an R package requires the Rtools to be installed): <br/> Download Rtools (version R 3.3.x and later).
 
