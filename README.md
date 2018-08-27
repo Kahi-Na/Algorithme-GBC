@@ -33,7 +33,7 @@
 3.	Test example :
 *	Install and load the “gbc” package in the work directory of the RStudio IDE (as it is explained before).
 -	Call the gbc function in the R console: gbc(“folder-of-the dataset/nameOfTheDataset.extension”) then get the results. Note that the dataset should be placed in the "data" folder of the "gbc" project, or on your work directory folder.
-- Example : write in the RStudio IDE Console the following command : <em> gbc("data/ruspini.txt") <em>, then get the results with the corresponding plots.
+- Example : write in the RStudio IDE Console the following command : *gbc("data/ruspini.txt")*, then get the results with the corresponding plots.
 
 ### Architectur description : 
 
