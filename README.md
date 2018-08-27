@@ -9,16 +9,31 @@
 
 ### Instructions how to Manage the project
 
-1.	Install  the R IDE “RStudio”  for windows 7/8/10 : <br/> Download RStudio (version 1.1.453+) and install it, . Launch the RStudio and install and load the necessary packages (“devtools”, “usethis” and “roxygen2”) to build the project.
-2.	Install R ( RStudio requires R version 3.0.1+) : <br/> Download R and install it.
-3.	Install Rtools (Creating or using an R package requires the Rtools to be installed): <br/> Download Rtools (version R 3.3.x and later).
+####	Requirements :
+1. R Installation :
+* Download R interpreter version 3.0.1+ ( RStudio requires R version 3.0.1+) from the R project website (https://cran.r-project.org/) , and install it.
+* Download Rtools version R 3.3.x and later (Creating or using an R package requires the Rtools to be installed).
+* Download the R IDE “RStudio” (version 1.1.453+) for windows 7/8/10  and install it
+* Launch the RStudio then install and load the necessary packages (“devtools”, “usethis” and “roxygen2”) to build the project.
 
-2. Obtain the project : <br/>We can obtain the project using gitHub (Online project hosting), by following gitHub instruction : git clone (https://github.com/Kahi-Na/Algorithme-GBC) <br/> Or, once the gbc package is available on CRAN use the basic instructions (as any other package available on CRAN), using the command “install.packages(“gbc”)” from the R console or using the menu of the RStudio IDE (by clicking on the button “Packages” then “Install” write the name of the package “gbc” and click “install”), once installed the package should be loaded in order to use it by using the command “library(gbc)”, then you can use “gbc (dataset)” method.
+2. Obtain the project : 
 
-4.	Test(s)(functional test(s)), as following :
--	Install and load the “gbc” package in the work directory of the RStudio IDE, after openning the "gbc" project that you have downloaded from Rstudio as follows: file -> open project -> open the "gbc.Rproj" file within the gbc folder, then a  new session will be openned for the gbc project.
--	Call the gbc function in the R console: gbc(“folder-of-the dataset/nameOfTheDataset.extension”) then get the results. Note that the dataset should be placed in the "data" folder of the "gbc" project. 
-- Example : gbc("data/ruspini.txt").
+* If the gbc package is not available on CRAN we can obtain the project using gitHub (Online project hosting), by following gitHub instruction : git clone (https://github.com/Kahi-Na/Algorithme-GBC), then to use it follow the instructions below : 
+    * Open the gbc package project from RStudio IDE as follows : file -> open project -> open the "gbc.Rproj" file within the gbc folder, then a  new session will be openned for the gbc project in RStudio.
+    * Once you opened the gbc poject you have now to  install it and load it in your work directory as  follows : from RStudio top right menu click on the button "Install and Restart", then you will have the gbc  installed and loaded automatically and now you can use it by calling the "gbc ("dataset")" function from the RStudio Console.
+    
+* Or, once the gbc package is available on CRAN use the basic instructions (as any other package available on CRAN) as follows :
+  * Either by using the following commands in the R IDE Console :  “install.packages(“gbc”)” , then load it  using "library(gbc)" command always in the IDE Console.
+  * Or, using the menu of the RStudio IDE (by clicking on the button “Packages” -> “Install” -> write the name of the package “gbc” -> click “install” and once installed you have to load it soo you can use it writting the "library(gbc)" command always in the RStudio Console (same as it is explained before).
+  
+ 3. Execution : 
+  * Once the gbc package is installed and loaded with the commands explained in the previous title.
+  * Now you can use the GBC method and excute it, by calling “gbc ("dataset")” function passing as a parameter your dataset.
+
+3.	Test example :
+*	Install and load the “gbc” package in the work directory of the RStudio IDE (as it is explained before).
+-	Call the gbc function in the R console: gbc(“folder-of-the dataset/nameOfTheDataset.extension”) then get the results. Note that the dataset should be placed in the "data" folder of the "gbc" project, or on your work directory folder.
+- Example : write in the RStudio IDE Console the following command : <em> gbc("data/ruspini.txt") <em>, then get the results with the corresponding plots.
 
 ### Architectur description : 
 
