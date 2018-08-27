@@ -22,10 +22,10 @@
 
 ### Architectur description : 
 
- * Model: distance.matrix.R, rng.R, gbc.R, calc_sub_graph.R, dfs.R, set_cluster_number.R,. <br/>
- * Packages: All information about the used packages by the gbc package and specifities are available within the DESCRIPTION file of the gbc package. <br>
+ * Model: distance.matrix.R, rng.R, gbc.R, calc_sub_graph.R, dfs.R, set_cluster_number.R,. The code of the gbc package is placed on its "R" folder. <br/>
+ * Packages: All information about the used packages by the gbc package and specifities are available within both the "DESCRIPTION file" and the "NAMESPACE file" of the gbc package. <br>
  
- * Datasets source : Any datasets following the requirements described within the help file of the gbc’s package main function (gbc.Rd).
+ * Datasets source : Any datasets following the requirements described within the help file of the gbc’s package main function (gbc.Rd), the datasets used as examples of the gbc package are contained within its "data" folder.
 
 * help documentation : 
 <br> DESCRIPTION file (of the gbc package) : You can visualize it in the gbc package folder from RStudio or open it from the gbc folder using a text editor (such as notepad++).   
