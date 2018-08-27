@@ -16,7 +16,7 @@
 2. Obtain the project : <br/>We can obtain the project using gitHub (Online project hosting), by following gitHub instruction : git clone (https://github.com/Kahi-Na/Algorithme-GBC) <br/> Or, once the gbc package is available on CRAN use the basic instructions (as any other package available on CRAN), using the command “install.packages(“gbc”)” from the R console or using the menu of the RStudio IDE (by clicking on the button “Packages” then “Install” write the name of the package “gbc” and click “install”), once installed the package should be loaded in order to use it by using the command “library(gbc)”, then you can use “gbc (dataset)” method.
 
 4.	Test(s)(functional test(s)), as following :
--	Install and load the “gbc” package in the work directory of the RStudio IDE, after the openning the "gbc" project that you have downloaded from Rstudio as follows: file -> open project -> open the "gbc.Rproj" file within the gbc folder, then a  new session will be openned for the gbc project.
+-	Install and load the “gbc” package in the work directory of the RStudio IDE, after openning the "gbc" project that you have downloaded from Rstudio as follows: file -> open project -> open the "gbc.Rproj" file within the gbc folder, then a  new session will be openned for the gbc project.
 -	Call the gbc function in the R console: gbc(“folder-of-the dataset/nameOfTheDataset.extension”) then get the results. Note that the dataset should be placed in the "data" folder of the "gbc" project. 
 - Example : gbc("data/ruspini.txt").
 
