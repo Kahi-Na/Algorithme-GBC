@@ -12,8 +12,8 @@
 ####	Requirements :
 1. R Installation :
 * Download R interpreter version 3.0.1+ ( RStudio requires R version 3.0.1+) from the R project website (https://cran.r-project.org/) , and install it.
-* Download Rtools version R 3.3.x and later (Creating or using an R package requires the Rtools to be installed).
-* Download the R IDE “RStudio” (version 1.1.453+) for windows 7/8/10  and install it
+* Download Rtools version R 3.3.x and later (Creating or using an R package requires the Rtools to be installed) from R website (https://cran.r-project.org/bin/windows/Rtools/)and install it.
+* Download the R IDE “RStudio” (version 1.1.453+) for windows 7/8/10  from its website (https://www.rstudio.com/products/rstudio/download/) and install it.
 * Launch the RStudio then install and load the necessary packages (“devtools”, “usethis” and “roxygen2”) to build the project.
 
 2. Obtain the project : 
